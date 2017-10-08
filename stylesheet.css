@@ -1,0 +1,491 @@
+/* ========== Browser Reset ========== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* ========== End Browser Reset ========== */
+
+html {
+	height: 100%;
+	background: url("images/banner01.jpg") no-repeat center fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+body {
+	display: block;
+	height: 100%;
+}
+
+/* ========== Fonts/Text ========== */
+
+h1 {
+	font-family: 'Ewert', cursive;
+	font-size: 60px;
+	color: white;
+	text-shadow: 1px 2px 20px black;
+    text-align: center;
+    margin-top: 27%;
+}
+
+h2 {
+    font-size: 28px;
+	color: white;
+	border-radius: 28px;
+	background-color: #000000;
+	box-shadow: 1px 1px 30px black;
+	text-align: center;
+	padding: 12px;
+	margin-top: 15px;
+	word-spacing: .3em;
+}
+
+h3 {
+    font-family: 'Special Elite', cursive;
+	font-size: 24px;
+	color: #D35400; 
+}
+
+h6 {
+	font-size: 1em;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+p { 
+	font-size: 20px;
+	color: white;
+}
+
+#subtitle {
+	width: 740px;
+    margin: auto;
+}
+
+/* ========== Header/Navigation Bar ========== */
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    position: relative;
+    top: 0;
+    z-index: 2000;
+}
+
+header ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 782px;
+    position: relative;
+}
+
+header ul li {
+	display: inline-block;
+}
+
+header ul li:hover {
+	background-color: #7b0a0a;
+
+	-webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+header ul li a {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px 30px;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul ul {
+	display: none;
+	position: absolute;
+	max-width: 125px;
+}
+
+header ul ul li {
+	display: block;
+	background-color: #222222;
+	color: white;
+	border-bottom: #000000 solid 1px;
+}
+
+header ul ul li a {
+	text-align: left;
+}
+
+header ul ul li:hover {
+	background-color: #7b0a0a;
+}
+
+/* ========== Main Body of Page ========== */
+
+.wrapper {
+    position: relative;
+    width: 960px;
+    margin: auto;
+    margin-top: 8%;
+}
+
+/*
+#specialPosts {
+	padding: 15px;
+	background-color: #000000;
+	opacity: .85;
+	border-radius: 20px;
+	box-shadow: white 0px 1px 32px;
+}
+
+*/
+
+footer {
+	background: black;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+#footerPlate {
+	margin: auto;
+	width: 937px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen 
+    and (max-width: 1366px)
+    and (orientation: landscape) {
+	    h1 {
+	        font-family: 'Ewert', cursive;
+	        font-size: 60px;
+	        color: white;
+	        text-shadow: 1px 2px 20px black;
+            text-align: center;
+            margin-top: 38%;
+        }
+    }
+
+@media screen 
+    and (max-width: 1280px) 
+    and (orientation: landscape) {
+        h1 {
+            font-family: 'Ewert', cursive;
+            font-size: 60px;
+            color: white;
+            text-shadow: 1px 2px 20px black;
+            text-align: center;
+            margin-top: 27%;
+        }
+
+        h2 {
+            font-size: 20px;
+            border-radius: 18px;
+        }
+
+        img {
+            width: 88px;
+        }
+
+        header ul li a {
+            margin: 0;
+            padding: 15px 26px;
+        }
+    }
+
+@media screen 
+    and (max-width: 1024px) 
+    and (orientation: portrait) {
+	    h1 {
+	        font-family: 'Ewert', cursive;
+	        font-size: 60px;
+	        color: white;
+	        text-shadow: 1px 2px 20px black;
+            text-align: center;
+            margin-top: 50%;
+        }
+    }
+
+@media screen 
+    and (max-width: 1024px) 
+    and (orientation: landscape) {
+	    h1 {
+	        font-family: 'Ewert', cursive;
+	        font-size: 60px;
+	        color: white;
+	        text-shadow: 1px 2px 20px black;
+            text-align: center;
+            margin-top: 20%;
+        }
+    }
+
+@media screen 
+    and (max-width: 800px) 
+    and (orientation: portrait) {
+
+    	html {
+    		width: 100%;
+    		height: 100%;
+    	}
+
+    	body {
+    		display: block;
+            width: 100%;
+            height: 100%;
+    	}
+
+        header {
+            width: 100%;
+        }
+
+        header ul li a {
+            font-size: 12px;
+        }
+
+    	.wrapper {
+    		width: 100%;
+    		top: 8%;
+    	}
+
+        #subtitle {
+            width: 100%;
+            margin: 0;
+        }
+
+    	h1 {
+    		display: block;
+	        font-family: 'Ewert', cursive;
+	        font-size: 40px;
+	        color: white;
+	        text-shadow: 1px 2px 20px black;
+            text-align: center;
+            margin-top: 37%;
+        }
+
+        h2 {
+            font-size: 22px;
+	        color: white;
+            width: 90%;
+	        border-radius: 28px;
+	        background-color: #000000;
+	        box-shadow: 1px 1px 30px black;
+	        text-align: center;
+	        padding: 8px;
+	        word-spacing: .25em;
+            margin: auto;
+        }
+
+        footer {
+        	width: 100%;
+        }
+
+        #footerPlate {
+        	width: 720px;
+        	padding: 0;
+        	margin: auto;
+        }
+
+        img {
+        	width: 68px;
+        }
+
+@media screen 
+    and (max-width: 767px)
+    and (orientation: landscape) {
+
+        header {
+            width: 100%;
+        }
+
+        #wrapper {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        ul {
+            width: 700px;
+        }
+
+        footer {
+            width: 100%;
+        }
+
+        #footerPlate {
+            width: 700px;
+        }
+
+        img {
+            width: 10%;
+        }
+
+}
+
+@media screen 
+    and (max-width: 414px)
+    and (orientation: portrait) {
+        html {
+        	height: 100%;
+	        background: url("images/banner01_414_portrait.jpg") no-repeat center fixed;
+	        background-size: cover;
+	        overflow: hidden;
+        }
+
+        header {
+            height: 60px;
+        }
+        
+        .burger-nav {
+            position: relative;
+            margin: auto;
+            display: block;
+            height: 100%;
+            width: 75px;
+            background: url("images/burger-menu008.png") no-repeat center;
+            background-size: 75%;
+        }
+
+        header ul {
+            width: 100%;
+        }
+
+        ul {
+            overflow: hidden;
+            background-color: #444444;
+            height: 0;
+            z-index: 2000;
+
+            -webkit-transition: height .4s;
+            -moz-transition: height .4s;
+            -o-transition: height .4s;
+            transition: height .4s;
+        }
+
+        ul.open {
+            height: 363px;
+        }
+
+        ul li {
+            float: none;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+        }
+
+        ul li a {
+            border-bottom: solid 1px #222222;
+            display: block;
+            margin: 0;
+        }
+
+        ul li ul {
+            display: block;
+        }
+
+        .wrapper {
+            width: 100%;
+        }
+
+        h1 {
+	        font-family: 'Ewert', cursive;
+	        font-size: 45px;
+	        color: white;
+	        text-shadow: 1px 2px 20px black;
+            text-align: center;
+            margin-top: 25%;
+        }
+
+        #subtitle {
+            width: 100%;
+            padding-top: 15px;
+            margin: 0;
+
+        }
+
+        h2 {
+            font-size: 12px;
+        	color: white;
+        	border-radius: 18px;
+        	background-color: #000000;
+        	box-shadow: 1px 1px 30px black;
+        	text-align: center;
+            padding: 12px 0px;
+        	word-spacing: .3em;
+            width: 90%;
+            margin: auto;
+        }
+
+        h6 {
+            font-size: .65em;
+        }
+
+        #footerPlate {
+            width: 360px;
+        }
+    }
+
+    @media screen 
+    and (max-width: 375px)
+    and (orientation: portrait) {
+        h1 {
+            margin-top: 15%;
+            font-size: 40px;
+        }
+
+        footer {
+            height: auto;
+        }
+    }
+
+    @media screen 
+    and (max-width: 320px)
+    and (orientation: portrait) {
+        h1 {
+            margin-top: 10%;
+            font-size: 40px;
+        }
+
+        #footerPlate {
+            width: 310px;
+        }
+
+        img {
+            width: 58px;
+        }
+    }
